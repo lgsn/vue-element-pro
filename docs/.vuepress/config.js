@@ -6,13 +6,18 @@ module.exports = {
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    home: '/guide',
+    home: '/guide/',
+    docsDir: 'docs',
+    base: '/',
     editLink: false,
+    lastUpdated: false,
+    contributors: false,
+    sidebarDepth: 3,
     navbar: [
       // NavbarItem
       {
         text: '指南',
-        link: '/guide'
+        link: '/guide/'
       },
       {
         text: '其他资源',
@@ -27,20 +32,20 @@ module.exports = {
       '/guide/': [
         {
           text: '基础',
-          link: '',
+          collapsable: false,
+          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission']
+        },
+        {
+          text: '其他',
+          collapsable: false,
           children: [
-            // SidebarItem
-            {
-              text: '介绍',
-              link: '/guide',
-              children: [],
-            },
-          ],
+            { text: '常见问题', link: '/guide/other/fqa.md' }
+          ]
         }
       ]
     },
     repo: 'https://gitlab.com/foo/bar',
     repoLabel: 'GitHub',
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '',
   }
 }
