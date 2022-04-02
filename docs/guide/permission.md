@@ -22,7 +22,20 @@
 ```
 
 ### 500
-一般是后端服务返回对状态在 200、304、400以外的状态码。如果你不需要此功能，你可以在 `@/utils/axios` 修改对应逻辑。
+一般是后端服务返回对状态在 200、304、400以外的状态码。如果你不需要此功能。
+
+```javascript:no-line-numbers
+// @/utils/axios
+
+// 修改以下逻辑
+function checkResponse(response) {
+    
+    // 修改判断逻辑
+    if (response && ([200, 304, 400].includes(Number(response.status)))) {
+        ...
+    }
+}
+```
 
 ## 指令权限
 在后台系统中，操作按钮通常是带有权限。`vue-element-pro` 封装了 [v-rights]() 快速实现对按钮对权限控制。

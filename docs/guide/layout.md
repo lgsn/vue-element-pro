@@ -2,27 +2,47 @@
 布局是一个中后台应用必备的，一个应用整体布局体往往会包含导航栏、菜单、以及内容等。
 
 ## layout
-默认情况下，`vue-element-pro` 会把所有页面动态挂载到项目本身的 `layout` 下，也就是你的页面只会在下方图片中的 `内容区域` 展示和替换。
+`layout` 是项目自带的页面布局，为了使用方便，`vue-element-pro`内部定义为 `layout` 。以下图为例，`layout`分为左侧的菜单栏、顶部的导航栏以内容区域。通常情况下你只需要在内容区域进行业务开发，这会很大程度的提高开发效率。
 
 ![Image](./img/layout.png)
 
-:::tip 提醒
-layout 通常用来作为页面的一种呈现方式，当然你可以替换Layout。
+:::warning 注意
+layout 为内部定义使用，在使用新的页面布局或创建新的菜单，你应该避免使用该单词。
 :::
 
-### 更换/删除 layout
-`vue-element-pro` 默认会把所有页面挂载到项目本身的layout 下。在某些情况下，你可能需要类似404，login这样的不受layout约束，或者想使用另外的layout。你只需要添加 `layout: true`
+#### 修改 layout
+找到 `@/layouts` 文件夹，项目自带的layout代码都放在此文件下，你可以在这里添加或者修改`layout`的功能以及样式。
 
-示例: 
+#### 定制 layout
+在某些清空下，你可能需要一个新的页面布局。例如一个接口文档页面，layout可能无法满足你的需求。你只需要新建一个布局组件，然后修改一级菜单下的`component`属性为新的布局组件地址。
+
+默认示例: 
 ```javascript:no-line-numbers
 {
   path: '/document',
   name: 'document',
-  component: '/document',
-  layout: true, // 添加layout 页面将不会被挂载至 layout 下
+  component: '', // 默认为layout，当使用框架自带布局时，可省略该属性。
   children: [{
-    path: 'list',
-    component: '/document/info',
+    path: 'info',
+    component: 'document/info',
+    name: 'documentInfo',
+    meta: {
+      title: '接口文档',
+      icon: 'icon-info',
+    }
+  }]
+}
+```
+
+更换layout: 
+```javascript:no-line-numbers
+{
+  path: '/document',
+  name: 'document',
+  component: '/document', // 更改为你需要的布局
+  children: [{
+    path: 'info',
+    component: 'document/info',
     name: 'documentInfo',
     meta: {
       title: '接口文档',
@@ -33,7 +53,7 @@ layout 通常用来作为页面的一种呈现方式，当然你可以替换Layo
 ```
 
 ## 内容
-内容也就是业务展示的区域，通常你只需要在这里进行操作。实现方式是[嵌套路由](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)，因此当你在左侧菜单切换时，只有内容区域变化，内容以外的区域不会收到影响。
+内容也就是业务展示的区域，通常你只需要在这里进行开发。实现方式是[嵌套路由](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)，因此当你在左侧菜单切换时，只有内容区域变化，内容以外的区域不会收到影响。
 
 ```javascript:no-line-numbers
 /user/list                    /user/info

@@ -33,7 +33,14 @@ module.exports = {
         {
           text: '基础',
           collapsable: false,
-          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission']
+          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission', '/guide/appInfo', '/guide/nav', '/guide/newPage', '/guide/axios', '/guide/build']
+        },
+        {
+          text: '组件',
+          collapsable: false,
+          children: [
+            { text: '业务组件', link: '/guide/component/business.md' }
+          ]
         },
         {
           text: '其他',
