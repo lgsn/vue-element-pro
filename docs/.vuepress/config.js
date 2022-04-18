@@ -1,5 +1,4 @@
 module.exports = {
-  base: 'vue-element-pro/',
   // 站点配置
   lang: 'zh-CN',
   title: 'vue-element-pro',
@@ -9,7 +8,7 @@ module.exports = {
   themeConfig: {
     home: '/guide/',
     docsDir: 'docs',
-    base: '/',
+    base: 'vue-element-pro/',
     editLink: false,
     lastUpdated: false,
     contributors: false,
