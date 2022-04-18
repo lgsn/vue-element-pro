@@ -39,7 +39,21 @@ module.exports = {
           text: '组件',
           collapsable: false,
           children: [
-            { text: '业务组件', link: '/guide/component/business.md' }
+            { text: 'GViewCard 业务布局', link: '/guide/component/viewCard.md' },
+            { text: 'GTableData 表格数据页', link: '/guide/component/tableData.md' },
+            { text: '分页', link: '/guide/component/gPagination.md' },
+            { text: '图标', link: '/guide/component/gIcon.md' },
+            { text: '按钮图标', link: '/guide/component/gBtnIcon.md' },
+            { text: '上传', link: '/guide/component/gUpload.md' },
+            { text: '头像', link: '/guide/component/gAvatar.md' },
+          ]
+        },
+        {
+          text: '指令',
+          collapsable: false,
+          children: [
+            { text: 'v-copy 复制', link: '/guide/directive/copy.md' },
+            { text: 'v-rights 权限', link: '/guide/directive/rights.md' },
           ]
         },
         {
