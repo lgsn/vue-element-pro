@@ -3,11 +3,11 @@ module.exports = {
   lang: 'zh-CN',
   title: 'vue-element-pro',
   base: '/vue-element-pro-docs/',
-  description: '管理后台前端解决方案，基于Vue@2.6.11 和Element-UI',
+  description: '管理后台前端解决方案',
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    home: '/guide/',
+    home: '/',
     docsDir: 'docs',
     base: '/',
     editLink: false,
