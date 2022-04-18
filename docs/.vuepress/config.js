@@ -1,14 +1,14 @@
 module.exports = {
   // 站点配置
   lang: 'zh-CN',
-  title: 'vue-element-pro',
+  title: '/vue-element-pro/',
   description: '管理后台前端解决方案，基于Vue@2.6.11 和Element-UI',
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
     home: '/guide/',
     docsDir: 'docs',
-    base: 'vue-element-pro/',
+    base: '/',
     editLink: false,
     lastUpdated: false,
     contributors: false,
