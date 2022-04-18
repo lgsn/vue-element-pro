@@ -1,4 +1,5 @@
 module.exports = {
+  base: 'vue-element-pro/',
   // 站点配置
   lang: 'zh-CN',
   title: 'vue-element-pro',

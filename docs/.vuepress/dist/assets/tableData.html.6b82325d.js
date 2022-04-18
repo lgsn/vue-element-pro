@@ -1,0 +1,1 @@
+const e={key:"v-33579102",path:"/guide/component/tableData.html",title:"\u8868\u683C\u6570\u636E\u9875",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"Props",slug:"props",children:[]},{level:3,title:"Table Events",slug:"table-events",children:[]},{level:3,title:"Slot",slug:"slot",children:[]}],filePathRelative:"guide/component/tableData.md"};export{e as data};

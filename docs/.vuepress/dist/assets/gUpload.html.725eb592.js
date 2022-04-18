@@ -1,0 +1,1 @@
+const e={key:"v-6284544f",path:"/guide/component/gUpload.html",title:"\u4E0A\u4F20",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"Props",slug:"props",children:[]}],filePathRelative:"guide/component/gUpload.md"};export{e as data};

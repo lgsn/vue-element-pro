@@ -1,0 +1,1 @@
+const e={key:"v-5cabdea6",path:"/guide/component/viewCard.html",title:"\u4E1A\u52A1\u5E03\u5C40",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],filePathRelative:"guide/component/viewCard.md"};export{e as data};
