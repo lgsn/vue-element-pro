@@ -34,7 +34,7 @@ module.exports = {
         {
           text: '基础',
           collapsable: false,
-          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission', '/guide/appInfo', '/guide/nav', '/guide/newPage', '/guide/axios', '/guide/build']
+          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission', '/guide/appInfo', '/guide/nav', '/guide/newPage', '/guide/detail', '/guide/axios', '/guide/build']
         },
         {
           text: '组件',
@@ -42,7 +42,7 @@ module.exports = {
           children: [
             { text: 'GViewCard 业务布局', link: '/guide/component/viewCard.md' },
             { text: 'GTableData 表格数据页', link: '/guide/component/tableData.md' },
-            { text: '分页', link: '/guide/component/gPagination.md' },
+            { text: '分页', link: '/guide/component/detail.md' },
             { text: '图标', link: '/guide/component/gIcon.md' },
             { text: '按钮图标', link: '/guide/component/gBtnIcon.md' },
             { text: '上传', link: '/guide/component/gUpload.md' },
