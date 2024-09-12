@@ -109,22 +109,22 @@ npm run serve
 
 ::: danger 警告
 
-在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `vue-lgsn-admin-plugin` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
+在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `vue-cli-plugin-lgsnadmin` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
 
 :::
 
 ```bash javascript:no-line-numbers
 # 创建项目 vue-cli v3.x 创建项目的同时也会安装依赖
-vue create vue-element-mini 
+vue create vue-project
 
 # 进入项目
-cd vue-element-mini
+cd vue-project
 
 # 安装插件
-npm i --save-dev vue-lgsn-admin-plugin
+npm i --save-dev vue-cli-plugin-lgsnadmin
 
 # 运行插件
-vue invoke vue-lgsn-admin-plugin
+vue invoke vue-cli-plugin-lgsnadmin
 
 # 本地开发 启动项目
 npm run serve
