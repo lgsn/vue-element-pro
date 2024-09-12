@@ -109,7 +109,7 @@ npm run serve
 
 ::: danger 警告
 
-在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `el-element-pro` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
+在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `vue-lgsn-admin-plugin` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
 
 :::
 
@@ -121,18 +121,18 @@ vue create vue-element-mini
 cd vue-element-mini
 
 # 安装插件
-npm i --save-dev vue-cli-plugin-work
+npm i --save-dev vue-lgsn-admin-plugin
 
 # 运行插件
-vue invoke vue-cli-plugin-work
+vue invoke vue-lgsn-admin-plugin
 
 # 本地开发 启动项目
 npm run serve
 ```
 
-选择安装任何一个版本，启动项目后会自动打开浏览器访问 http://localhost:8081， 你看到下面的页面就代表操作成功了。
+选择安装任何一个版本，启动项目后会自动打开浏览器访问（或手动输入项目URL）， 你看到下面的页面就代表操作成功了。
 
-![Image](./img/login.png)
+![Image](./img/login.jpg)
 
 接下来你可以修改代码进行业务开发了，[完整版](#完整版)项目内建了典型业务模板、常用业务组件、状态管理、全局路由等等各种实用的功能来辅助开发。
 

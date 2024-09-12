@@ -66,6 +66,6 @@ layout 为内部定义使用，在使用新的页面布局或创建新的菜单�
 +------------------+                  +-----------------+
 ```
 :::tip 提醒
-当切换内容区域时，`el-element-pro` 默认带有过渡动画。
+当切换内容区域时，`vue-lgsn-admin` 默认带有过渡动画。
 <br/>在 `@/layouts/MenuModal/BasicLayoutInline` 中修改过渡效果。
 :::

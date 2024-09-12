@@ -267,10 +267,10 @@ commit('setIsGetMenu', { routes, defaultPath, flag: true })
     hideMenu: true, // 菜单中隐藏
     children: [
         {
-            name: 'menuDetail',
-            path: '/menuDetail',
-            component: 'business/menuDetail',
-            activeMenu: 'menu', // 访问菜单 选中菜单栏中某一项 值为 name
+            name: 'businessDetail',
+            path: '/businessDetail',
+            component: 'business/businessDetail',
+            activeMenu: 'business', // 访问该路径时 菜单栏选中某一项 值为 name
             meta: { title: '详情页', 'icon': 'icon-tongjifenxi' },
         }
     ]
