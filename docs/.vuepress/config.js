@@ -1,13 +1,13 @@
 module.exports = {
   // 站点配置
   lang: 'zh-CN',
-  title: 'vue-element-pro',
-  base: '/vue-element-pro-docs/',
-  description: '管理后台前端解决方案，基于Vue@2.6.11 和Element-UI',
+  title: 'vue-lgsn-admin',
+  base: '/vue-lgsn-admin-docs/',
+  description: '管理后台前端解决方案',
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    home: '/guide/',
+    home: '/',
     docsDir: 'docs',
     base: '/',
     editLink: false,
@@ -34,7 +34,7 @@ module.exports = {
         {
           text: '基础',
           collapsable: false,
-          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission', '/guide/appInfo', '/guide/nav', '/guide/newPage', '/guide/axios', '/guide/build']
+          children: ['/guide/preface/', '/guide/', '/guide/layout/', '/guide/menu', '/guide/permission', '/guide/appInfo', '/guide/nav', '/guide/newPage', '/guide/detail', '/guide/axios', '/guide/build']
         },
         {
           text: '组件',
@@ -42,7 +42,7 @@ module.exports = {
           children: [
             { text: 'GViewCard 业务布局', link: '/guide/component/viewCard.md' },
             { text: 'GTableData 表格数据页', link: '/guide/component/tableData.md' },
-            { text: '分页', link: '/guide/component/gPagination.md' },
+            { text: '分页', link: '/guide/component/detail.md' },
             { text: '图标', link: '/guide/component/gIcon.md' },
             { text: '按钮图标', link: '/guide/component/gBtnIcon.md' },
             { text: '上传', link: '/guide/component/gUpload.md' },
@@ -66,7 +66,7 @@ module.exports = {
         }
       ]
     },
-    repo: 'https://gitlab.com/foo/bar',
+    repo: 'https://github.com/lgsn/vue-lgsn-admin',
     repoLabel: 'GitHub',
     logo: '',
   }

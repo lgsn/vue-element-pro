@@ -1,5 +1,5 @@
 # 权限校验
-`vue-element-pro`中分为路由权限、指令权限。
+`vue-lgsn-admin`中分为路由权限、指令权限。
 
 ## 路由权限
 路由权限是对用户访问的地址进行校验，其原理主要是通过 [导航守卫](https://v3.router.vuejs.org/zh/guide/advanced/navigation-guards.html)实现。
@@ -16,7 +16,7 @@
 ```
 
 ### 404
-`vue-element-pro` 是通过 `vue-router`进行配置。
+`vue-lgsn-admin` 是通过 `vue-router`进行配置。
 ```javascript:no-line-numbers
 { path: '*', redirect: '/404' }
 ```
@@ -38,7 +38,7 @@ function checkResponse(response) {
 ```
 
 ## 指令权限
-在后台系统中，操作按钮通常是带有权限。`vue-element-pro` 封装了 [v-rights]() 快速实现对按钮对权限控制。
+在后台系统中，操作按钮通常是带有权限。`vue-lgsn-admin` 封装了 [v-rights]() 快速实现对按钮对权限控制。
 
 ```javascript:no-line-numbers
 <el-button v-right='edit'>编辑</el-button>

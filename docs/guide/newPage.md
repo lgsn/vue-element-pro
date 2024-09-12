@@ -19,14 +19,14 @@
 注意一级路由通常用作 layout 布局，因此新页面需要放到二级路由下。
 ```js:no-line-numbers
 {
-  name: 'dome',
-  path: '/dome',
+  name: 'Dashboard',
+  path: '/Dashboard',
   children: [
       {
-          name: 'domePage',
-          path: '/page',
-          component: 'domePage',
-          meta: { title: 'Dome' },
+          name: 'dashboard',
+          path: '/dashboard',
+          component: 'dashboard',
+          meta: { title: '首页' },
       }
   ]
 }
@@ -37,31 +37,30 @@
 ```js:no-line-numbers
 // 添加 showRoot
 {
-  name: 'dome',
-  path: '/dome',
+  name: 'Dashboard',
+  path: '/Dashboard',
   showRoot: true,
-  meta: { title: '新增页面' },
+  meta: { title: '首页' },
   children: [
       {
-          name: 'domePage',
-          path: '/page',
-          component: 'domePage',
-          meta: { title: 'Dome' },
+          name: 'dashboard',
+          path: '/dashboard',
+          component: 'dashboard',
+          meta: { title: '展示为二级菜单' },
       }
   ]
 }
 
 // 或者添加子级
 {
-  name: 'dome',
-  path: '/dome',
-  meta: { title: '新增页面' },
+  name: 'Dashboard',
+  path: '/Dashboard',
   children: [
       {
-          name: 'domePage',
-          path: '/page',
-          component: 'domePage',
-          meta: { title: 'Dome' },
+          name: 'dashboard',
+          path: '/dashboard',
+          component: 'dashboard',
+          meta: { title: '首页' },
       },
       {
           name: 'casePage',

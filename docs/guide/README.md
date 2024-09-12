@@ -1,7 +1,7 @@
 # 介绍
 [![Image](https://img.shields.io/badge/2.6.11-vue-brightgreen)]()&nbsp; &nbsp; [![Image](https://img.shields.io/badge/2.15.1-element--ui-brightgreen)]()
 
-[vue-element-pro]() 是基于 [vue](https://cn.vuejs.org/v2/guide/index.html) 和 [element-ui](https://element.eleme.cn/#/zh-CN) 封装的一套中后台前端/设计解决方案。 内部实现了动态路由、权限校验/指令，并提炼出典型模板/业务组件/功能组件。它可以帮你快速搭建企业级中后台项目。
+[vue-lgsn-admin]() 是基于 [vue](https://cn.vuejs.org/v2/guide/index.html) 和 [element-ui](https://element.eleme.cn/#/zh-CN) 封装的一套中后台前端/设计解决方案。 内部实现了动态路由、权限校验/指令，并提炼出典型模板/业务组件/功能组件。它可以帮你快速搭建企业级中后台项目。
 
 ## 前序准备
 项目技术栈基于 [vue](https://cn.vuejs.org/v2/guide/)、[vuex](https://v3.vuex.vuejs.org/zh/)、[vue-router](https://v3.router.vuejs.org/zh/) 、[vue-cli](https://cli.vuejs.org/zh/guide/) 、[axios](http://www.axios-js.com/) 和 [element-ui](https://element.eleme.cn/#/zh-CN/component/installation)，提前了解和学习这些知识会对使用本项目有很大的帮助。
@@ -77,7 +77,7 @@
 我们推荐尽可能的拆分路由组件为更细粒度的组件，对于多个页面可能会用到的组件我们推荐放到 src/components 中，对于只是被单个页面依赖的（区块）组件，我们推荐就近维护到路由组件文件夹下即可。
 
 ## 安装
-`vue-element-pro` 定位是后台集成方案，因此本项目集成了很多你可能用不到的功能，会造成不少的代码冗余。如果你的项目只需要框架本身功能，可以选择 [简约版]() 方式安装。
+`vue-lgsn-admin` 定位是后台集成方案，因此本项目集成了很多你可能用不到的功能，会造成不少的代码冗余。如果你的项目只需要框架本身功能，可以选择 [简约版]() 方式安装。
 
 ### 完整版
 完整版是包含了本项目的全部功能，开箱即用。
@@ -87,7 +87,7 @@
 git clone TODO
 
 # 进入项目目录
-cd vue-element-pro
+cd vue-lgsn-admin
 
 # 安装依赖
 npm install
@@ -105,11 +105,11 @@ npm run serve
 
 `简约版` 是基于 [vue-cli 插件](https://cli.vuejs.org/zh/dev-guide/plugin-dev.html) 开发.
 
-在一些特殊情况下，你可能只需要 `vue-element-pro` 框架本身，并不需要其他 例如典型模版、业务组件等等框架本身外的功能。安装简约版是一个很好的选择，它只集成了框架以及框架本身所依赖的功能。不需要你额外的手动去删除沉余代码。查阅[简约版功能](/guide/#简约版功能)
+在一些特殊情况下，你可能只需要 `vue-lgsn-admin` 框架本身，并不需要其他 例如典型模版、业务组件等等框架本身外的功能。安装简约版是一个很好的选择，它只集成了框架以及框架本身所依赖的功能。不需要你额外的手动去删除沉余代码。查阅[简约版功能](/guide/#简约版功能)
 
 ::: danger 警告
 
-在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `el-element-pro` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
+在运行 `简约版` 插件时，它会检查并删除目录下的一些文件，以确保 `vue-lgsn-admin-plugin` 可以正常运行。所以你需要确认是在全新项目下安装/运行 `简约版`
 
 :::
 
@@ -121,18 +121,18 @@ vue create vue-element-mini
 cd vue-element-mini
 
 # 安装插件
-npm i --save-dev vue-cli-plugin-work
+npm i --save-dev vue-lgsn-admin-plugin
 
 # 运行插件
-vue invoke vue-cli-plugin-work
+vue invoke vue-lgsn-admin-plugin
 
 # 本地开发 启动项目
 npm run serve
 ```
 
-选择安装任何一个版本，启动项目后会自动打开浏览器访问 http://localhost:8081， 你看到下面的页面就代表操作成功了。
+选择安装任何一个版本，启动项目后会自动打开浏览器访问（或手动输入项目URL）， 你看到下面的页面就代表操作成功了。
 
-![Image](./img/login.png)
+![Image](./img/login.jpg)
 
 接下来你可以修改代码进行业务开发了，[完整版](#完整版)项目内建了典型业务模板、常用业务组件、状态管理、全局路由等等各种实用的功能来辅助开发。
 
