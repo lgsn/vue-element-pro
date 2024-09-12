@@ -1,5 +1,5 @@
 # 路由和菜单 
-路由和菜单是组织起一个后台应用的关键骨架。在`vue-element-pro`中菜单是根据路由生成。路由数据可以是静态写入也可以是后端接口返回，或者两者合并使用。
+路由和菜单是组织起一个后台应用的关键骨架。在`vue-lgsn-admin`中菜单是根据路由生成。路由数据可以是静态写入也可以是后端接口返回，或者两者合并使用。
 
 ## 配置项
 配置项就是路由的属性，在 [vue-router](https://v3.router.vuejs.org/zh/) 的基础上增加额外的属性以及约定一些规则。
@@ -56,10 +56,10 @@ meta: {
 ```
 
 ### name
-name 为必填且必须保证全局唯一。`vue-element-pro` 中是根据 [name](/guide/menu.html#name) 进行路由跳转而不是 [path](/guide/menu.html#name) 。在项目中你也应该遵守这一约定。
+name 为必填且必须保证全局唯一。`vue-lgsn-admin` 中是根据 [name](/guide/menu.html#name) 进行路由跳转而不是 [path](/guide/menu.html#name) 。在项目中你也应该遵守这一约定。
 
 ### component
-为了兼容动态菜单的实现，在注册路由之前，`vue-element-pro` 内部会用 [alias](https://webpack.js.org/configuration/resolve/#resolve-alias) 将 `component` 的路径进行特殊处理。因此配置项的 component 不再是一个函数也就是不支持 `vue-router`中的 component 写法。 额外的你需要保证所有的页面文件都放在 `project-name/src/views/` 文件下。并且 `component` 只填写相对于 `views` 的路径，以防止注册出现问题。
+为了兼容动态菜单的实现，在注册路由之前，`vue-lgsn-admin` 内部会用 [alias](https://webpack.js.org/configuration/resolve/#resolve-alias) 将 `component` 的路径进行特殊处理。因此配置项的 component 不再是一个函数也就是不支持 `vue-router`中的 component 写法。 额外的你需要保证所有的页面文件都放在 `project-name/src/views/` 文件下。并且 `component` 只填写相对于 `views` 的路径，以防止注册出现问题。
 
 示例: 
 ```javascript:no-line-numbers
@@ -89,7 +89,7 @@ component: 'layout'，这里的 layout 为项目自带的页面布局，如果�
 
 
 ## 路由
-`vue-element-pro` 的路由就是[vue-router](https://v3.router.vuejs.org/zh/)，只是对其进行了一些封装。因此你可以使用`vue-router` 的属性和方法。
+`vue-lgsn-admin` 的路由就是[vue-router](https://v3.router.vuejs.org/zh/)，只是对其进行了一些封装。因此你可以使用`vue-router` 的属性和方法。
 
 ### 静态路由
 静态路由是指像login、404、500等这种无需权限管理。 `@/config/router.config.js` 中进行配置。
@@ -99,12 +99,12 @@ component: 'layout'，这里的 layout 为项目自带的页面布局，如果�
 :::
 
 ### 动态路由
-`vue-element-pro` 在 `@/permission` 中以 `userInfo` 模拟接口的方式获取路由数据，通过 `addRoute` 方式实现动态加载路由。
+`vue-lgsn-admin` 在 `@/permission` 中以 `userInfo` 模拟接口的方式获取路由数据，通过 `addRoute` 方式实现动态加载路由。
 
 你只需要替换 `permission/generateRoutes` 中传入的数据即可。
 ```javascript:no-line-numbers
 // 模拟接口方式 路由数据
-// vue-element-pro 是通过 getUserInfo 方法获取数据
+// vue-lgsn-admin 是通过 getUserInfo 方法获取数据
 // 你也可以修改这里的逻辑
 const responseRouters = await store.dispatch('getUserInfo')
 
@@ -116,7 +116,7 @@ const routes = await store.dispatch('permission/generateRoutes', responseRouters
 :::
 
 ## 菜单
-在 `vue-element-pro`中，会根据你的路由配置自动生成。值得注意的是，简洁的路由应该保持在两级嵌套，如果还有下级，你应该通过详情页等其他途径来解决。
+在 `vue-lgsn-admin`中，会根据你的路由配置自动生成。值得注意的是，简洁的路由应该保持在两级嵌套，如果还有下级，你应该通过详情页等其他途径来解决。
 
 :::tip 提醒
 `@/layouts/MenuModal/BasicMenu` 对应菜单功能实现。
@@ -204,7 +204,7 @@ const routes = await store.dispatch('permission/generateRoutes', responseRouters
 ```
 
 ### 图标
-`vue-element-pro` 中图标使用的是 [iconfont](https://www.iconfont.cn/) 的 [symbol 引用](https://www.iconfont.cn/help/detail?spm=a313x.7781069.1998910419.d8cf4382a&helptype=code)，项目在 `@/styles/global.css`中已加入通用CSS代码，JS文件在 `@/utils/proicon`。并对图标对使用进行了封装 [组件 - 图标]()。
+`vue-lgsn-admin` 中图标使用的是 [iconfont](https://www.iconfont.cn/) 的 [symbol 引用](https://www.iconfont.cn/help/detail?spm=a313x.7781069.1998910419.d8cf4382a&helptype=code)，项目在 `@/styles/global.css`中已加入通用CSS代码，JS文件在 `@/utils/proicon`。并对图标对使用进行了封装 [组件 - 图标]()。
 
 你只需在 `main.js`中引入你的图标JS文件，在 `meta.icon`中填写对应类名。
 ```javascript:no-line-numbers
@@ -242,7 +242,7 @@ const routes = await store.dispatch('permission/generateRoutes', responseRouters
 }
 ```
 ### 默认菜单
-`vue-element-pro` 在注册路由之前，会获取第一个可访菜单作为项目的默认访问地址。如果你想指定这个地址，找到 `@/store/modules/permission` 下的 `generateRoutes`
+`vue-lgsn-admin` 在注册路由之前，会获取第一个可访菜单作为项目的默认访问地址。如果你想指定这个地址，找到 `@/store/modules/permission` 下的 `generateRoutes`
 
 ```javascript:no-line-numbers
 //  @/store/modules/permission

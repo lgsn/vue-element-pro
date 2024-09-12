@@ -1,5 +1,5 @@
 # 表格数据页 
-`vue-element-pro` 基于 `element-ui` 把常用的列表页进行封装，以减少重复开发。包含顶部筛选条件、数据列表、底部分页三大功能。
+`vue-lgsn-admin` 基于 `element-ui` 把常用的列表页进行封装，以减少重复开发。包含顶部筛选条件、数据列表、底部分页三大功能。
 
 :::tip 提醒
 分页组件是 [GPagiation](./gPagination.md)，这样做是为了统一分页的样式。
