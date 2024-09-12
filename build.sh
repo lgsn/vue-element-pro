@@ -20,10 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-<<<<<<< HEAD
 git push -f https://github.com/lgsn/vue-lgsn-admin-docs.git master:gh-pages
-=======
-git push -f https://github.com/lgsn/vue-lgsn-admin.git master:gh-pages
->>>>>>> docs
 
 cd -
