@@ -1,0 +1,1 @@
+const e={key:"v-157a830d",path:"/guide/component/gBtnIcon.html",title:"\u64CD\u4F5C\u56FE\u6807",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"Table Events",slug:"table-events",children:[]}],filePathRelative:"guide/component/gBtnIcon.md"};export{e as data};

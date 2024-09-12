@@ -1,0 +1,1 @@
+const e={key:"v-7bd3ba97",path:"/guide/component/gIcon.html",title:"\u56FE\u6807",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"\u83B7\u53D6\u5185\u7F6E\u56FE\u6807",slug:"\u83B7\u53D6\u5185\u7F6E\u56FE\u6807",children:[]}],filePathRelative:"guide/component/gIcon.md"};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-467c8636",path:"/guide/directive/rights.html",title:"\u6307\u4EE4\u6743\u9650",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"directivePer",slug:"directiveper",children:[]},{level:3,title:"v-rights",slug:"v-rights",children:[]}],filePathRelative:"guide/directive/rights.md"};export{e as data};
